@@ -1,0 +1,6 @@
+library(MetaEngine)
+features <- pm_parse_mz_time(c("181.07066_5.000", "150.00000_2.000"))
+db <- data.frame(compound_id = "SYNTH001", metabolite_name = "Synthetic mass standard", exact_mass = 180.063383, formula = "C6H12O6")
+obj <- pm_annotate_database(features, db, ion_mode = "positive", ppm = 10)
+print(obj$summary)
+print(obj$candidates[, intersect(c("mz_time", "metabolite_name", "adduct_hypothesis", "database_ppm_error"), names(obj$candidates)), drop=FALSE])

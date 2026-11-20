@@ -1,0 +1,14 @@
+Package: MetaEngine
+Title: Post-Acquisition Metabolomics Annotation and Analysis
+Version: 0.6.0.9000
+Authors@R: person("MetaEngine", "Contributors", role = c("aut", "cre"), email = "maintainer@example.org")
+Description: Modular post-acquisition metabolomics analysis including accurate-mass
+    candidate generation, adduct hypotheses, MS-DIAL evidence import, and
+    exploratory differential statistics and pathway analysis. Identification
+    confidence is evidence-dependent and mass-only candidates remain tentative.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.2.0)
+Imports: stats, utils, tools
+Suggests: testthat (>= 3.0.0), limma, preprocessCore, readxl, xml2, igraph, data.table, dplyr, ggplot2, BiocManager, variancePartition
+Config/testthat/edition: 3

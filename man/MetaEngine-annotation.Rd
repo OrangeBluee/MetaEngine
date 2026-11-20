@@ -1,0 +1,41 @@
+\name{MetaEngine-annotation}
+\alias{MetaEngine-annotation}
+\alias{pm_write_annotation_templates}
+\alias{pm_write_msdial_annotation_templates}
+\alias{pm_ppm}
+\alias{pm_parse_mz_time}
+\alias{pm_annotation_features}
+\alias{pm_standardize_library}
+\alias{pm_match_mass}
+\alias{pm_read_confirmed_annotations}
+\alias{pm_read_msms_evidence}
+\alias{pm_score_annotations}
+\alias{pm_adduct_table}
+\alias{pm_neutral_mass_from_mz}
+\alias{pm_expand_adducts}
+\alias{pm_test_adduct_expansion}
+\alias{pm_empirical_compounds_mztime}
+\alias{pm_clean_metabolite_name}
+\alias{pm_standardize_database}
+\alias{pm_read_hmdb_xml}
+\alias{pm_read_metabolite_database}
+\alias{pm_match_database_by_neutral_mass}
+\alias{pm_corroborate_database_candidates}
+\alias{pm_annotate_database}
+\alias{pm_write_database_annotation_outputs}
+\alias{pm_null_to_na}
+\alias{pm_num}
+\alias{pm_flag}
+\alias{pm_score01}
+\alias{pm_has_spectrum}
+\alias{pm_find_col}
+\alias{pm_read_msdial}
+\alias{pm_score_msdial_annotation}
+\alias{pm_annotate_msdial}
+\alias{pm_annotate}
+\alias{pm_merge_annotation_results}
+\alias{pm_write_annotation_outputs}
+\title{MetaEngine annotation functions}
+\description{Import metabolite databases and MS-DIAL exports, generate accurate-mass candidates across adduct hypotheses, and summarize annotation evidence for features identified by \code{mz_time}.}
+\details{Database matching retains candidate metabolites independently of MS-DIAL preliminary names. MS/MS, retention-time, and supplied standard-confirmation evidence contribute to candidate ranking. Accurate-mass agreement alone supports a candidate assignment; heuristic scores are not identification probabilities.}
+\keyword{internal}
